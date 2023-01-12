@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="logo"></div>
+    <div id="current-goals" class="goals">
+        <h1 id="current-goals-header">Current Goals
+            <a id="plus" href="edit-goal.html?goal_id=23">+</a>
+        </h1>
+
+        <!-- Two example goals -->
+        <div class="goal">
+            <h2 class="goal-name">Train for marathon</h2>
+            <a class="view-goal-button" href="goal.html?goal_id=23"></a>
+            <div class="inner-goal">
+                <a class="description">Prepare for the Leiden Marathon</a>
+                <div class="goal-tasks"></div>
+                <a class="deadline">Deadline: 14-05-2023</a>
+            </div>
+        </div>
+        <div class="goal">
+            <h2 class="goal-name">Study for Web Technology</h2>
+            <a class="view-goal-button" href="goal.html?goal_id=154"></a>
+            <div class="inner-goal">
+                <a class="description">Prepare for the endterm exam in Web and Database Technology</a>
+                <div class="goal-tasks">
+                    <div id="task">
+                        <input type="checkbox">
+                        <a clas="goal-task">Complete assignment 1</a>
+                    </div>
+                    <div id="task">
+                        <input type="checkbox">
+                        <a clas="goal-task">Read lecture slides</a>
+                    </div>
+                </div>
+                <a class="deadline">Deadline: 20-01-2023</a>
+            </div>
+        </div>
+    </div>
+    <div id="past-goals" class="goals">
+        <h1 id="past-goals-header">Past Goals</h1>
+        <!-- Example of a Past Goal-->
+        <div class="goal">
+            <h2 class="goal-name">Study for Calculus</h2>
+            <a class="view-goal-button" href="goal.html?goal_id=154"></a>
+            <div class="inner-goal">
+                <a class="description">Prepare for the midterm calculus exam</a>
+                <div class="goal-tasks">
+                    <div id="task">
+                        <input type="checkbox" checked>
+                        <a clas="goal-task">Do practice exam</a>
+                    </div>
+                    <div id="task">
+                        <input type="checkbox" checked>
+                        <a clas="goal-task">Read lecture slides</a>
+                    </div>
+                    <div id="task">
+                        <input type="checkbox">
+                        <a clas="goal-task">Do textbook exercises</a>
+                    </div>
+                </div>
+                <a class="deadline">Deadline: 10-12-2022</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

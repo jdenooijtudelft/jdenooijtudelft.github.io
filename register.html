@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div id="logo"></div>
+    <form id="register-form">
+        <div id="form-two-columns">
+            <div class="form-element">
+                <label for="userID">User ID</label>
+                <input type="" name="userID">
+            </div>
+            <div class="form-element">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-element">
+            <label>Sex</label>
+            <select name="sex">
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="intersex">Intersex</option>
+                <option value="non-binary">Non-Binary</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>
+                <option value="on occasions">On Occasions</option>
+                <option value="male-ish">Male-ish</option>
+                <option value="female-ish">Female-ish</option>
+                <option value="rather not tell">Rather not tell</option>
+            </select>
+            </div>
+            <div class="form-element">
+                <label for="address">Street and Apartment Nr.</label>
+                <input type="text" name="address">
+            </div>
+            <div class="form-element">
+                <label for="zip-code">ZIP code</label>
+                <input type="text" name="zip code">
+            </div>
+            <div class="form-element">
+                <label for="country">Country</label>
+                <input type="text" name="country">
+            </div>
+            <div class="form-element">
+                <label for="language">Language</label>
+                <select name="language">
+                    <option value=""></option>
+                    <option value="English">English</option>
+                </select>
+
+            </div>
+            <div class="form-element">
+                    <label for="bio">Bio</label>
+                    <input type="text" name="bio">
+            </div>
+        </div>
+
+        <div id="buttons">
+            <input onclick="window.location.href='index.html'" type="button" value="To Login">
+            <input id="button-submit" onclick="window.location.href='home.html'" type="button" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

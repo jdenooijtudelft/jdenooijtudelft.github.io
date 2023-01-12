@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="logo"></div>
+
+    <!-- Example of Goal to view -->
+    <a id="view-all-goals-button" href="home.html">←</a>
+    <div class="goal" id="detailed-goal">
+        <a id="edit-goal-button" href="edit-goal.html?goal_id=154"></a>
+        <h2 id="goal-header">Study for Calculus</h2>
+        <p class="description">Prepare for the midterm calculus exam</p>
+
+        <div id="goal-tasks">
+            <h3 id="tasks-header">Tasks: </h3>
+            <a class="add-task-button" href="edit-task.html?goal_id=154">+</a>
+            <div class="task">
+                <input type="checkbox" checked>
+                <a class="edit-task-button" href="edit-task.html?goal_id=154&task_id=320"></a>
+                <a class="goal-task-title">Do practice exam</a>
+                <p class="goal-task-description">
+                    Do a practice exam from brightspace that should take 120 minutes. After taking it, check answers.
+                </p>
+            </div>
+            <div class="task">
+                <input type="checkbox" checked>
+                <a class="edit-task-button" href="edit-task.html?goal_id=154&task_id=321"></a>
+                <a class="goal-task-title">Read lecture slides</a>
+                <p class="goal-task-description">
+                </p>
+            </div>
+            <div class="task">
+                <input type="checkbox">
+                <a class="edit-task-button" href="edit-task.html?goal_id=154&task_id=322"></a>
+                <a class="goal-task-title">Do textbook exercises</a>
+                <p class="goal-task-description">
+                    Do at least one question from each section with specific focus on section 13 and 14 (about 3 hours).
+                </p>
+            </div>
+        </div>
+        <a class="deadline">Deadline: 10-12-2022</a>
+    </div>
+</body>
+</html>
