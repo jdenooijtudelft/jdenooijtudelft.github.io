@@ -1,0 +1,229 @@
+/*
+    This creates our logo
+*/
+#logo::after {
+    content: "✓";
+}
+#logo {
+    font-size: 50px;
+    height: 50px;
+    margin: 50px 0px 10px 0px;
+    text-align: center;
+}
+/*
+    This section styles the login and register form
+*/
+#login-form {
+    margin: 60px auto 0px auto;
+    width: 300px;
+}
+
+#button-submit {
+    background-color:rgb(255, 253, 230);
+    border-color: white;
+}
+
+#register-form {
+    margin: 60px auto 0px auto;
+    width: 400px;
+    flex: 200px;
+}
+#form-two-columns {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+}
+#buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#buttons input {
+    margin: 0px 20px; /* Create space between buttons */
+    /* Next two lines make it so that each button has the same size. */
+    flex-grow: 1;
+    flex-basis: 0px;
+    padding: 10px;
+}
+#login-form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-element {
+    margin: 12px auto;
+}
+.form-element label {
+    display: block; /* Put next element on the next line, so it looks less cramped. */
+}
+#buttons {
+    margin-top: 20px;
+}
+#register-form input{
+   width: 100%;
+   display: block;
+   box-sizing: border-box;
+}
+#register-form .form-element {
+    width: 100%;
+}
+#register-form select {
+    width: 100%;
+}
+/*
+    This section styles the create/edit goal form
+*/
+#edit-goal-form {
+    margin: 60px auto 60px auto;
+    width: 200px;
+    /*display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;*/
+}
+#edit-goal-header {
+    text-align: center;
+}
+#edit-goal-form label {
+    display: block;/* Put next element on the next line, so it looks less cramped. */
+}
+#edit-goal-form input {
+    width: 90%;
+    padding: 2px;
+}
+
+
+#edit-task-form {
+    margin: 60px auto 60px auto;
+    width: 200px;
+}
+#edit-task-header {
+    text-align: center;
+}
+#edit-task-form label {
+    display: block;/* Put next element on the next line, so it looks less cramped. */
+}
+#edit-task-form input {
+    width: 90%;
+    padding: 2px;
+}
+/* 
+    Next section is code for displaying 
+    the list of goals.
+*/
+#current-goals-header,
+#past-goals-header {
+    text-align: center;
+}
+.goals {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    list-style-type: none;
+    display: grid;
+
+    grid-gap: 20px;
+}
+.goal {
+    counter-increment: css-counter 1;
+    border: 0px grey solid;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: rgb(255, 253, 230);
+    box-shadow: 2px 2px 5px rgb(187, 187, 187);
+}
+#past-goals{
+    margin-bottom: 40px;
+}
+.view-goal-button::before {
+    content: "🔍";
+}
+.view-goal-button {
+    vertical-align: top;
+    float: right;
+    margin-top: -35px; /* Put it on the same line as the title */
+    text-decoration: none;
+}
+.goal-name::before {
+    content: counter(css-counter) ". ";
+}
+.goal-name {
+    font-size: 1.1rem;
+}
+.inner-goal {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 25px;
+}
+.inner-goal > a,
+.inner-goal > div {
+    flex: 1;
+}
+.inner-goal .goal-tasks {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+#plus {
+    margin-left: 2rem; /* Give it some space */
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 253, 230);
+}
+#detailed-goal {
+    margin-top: 40px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#detailed-goal .task {
+    margin-left: 2rem;
+}
+#detailed-goal .goal-task-description {
+    margin: 0.5rem 0px 1rem 2rem;
+}
+#view-all-goals-button {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.add-task-button {
+    float: right;
+    margin-top: -3rem;  
+    text-decoration: none; 
+    font-size: 1.5rem; 
+}
+.edit-task-button::before {
+    content: "🔍";
+}
+.edit-task-button {
+    float: right;
+    text-decoration: none;
+}
+#edit-goal-button::before {
+    content: "edit";
+}
+#goal-header{
+    display: inline;
+}
+#edit-goal-button {
+    display: inline;
+    float: right;
+    text-decoration: none;
+
+}
+#tasks-header{
+    display: block;
+}
